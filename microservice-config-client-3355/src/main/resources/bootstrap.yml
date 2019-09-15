@@ -1,0 +1,16 @@
+# spring config client 端
+spring:
+  cloud:
+    config:
+      name: microservicecloud-config-client  # 从 git 上读取的 client 端资源文件, 没有 .yml 后缀名
+      profile: dev #  本次访问的配置项
+      label: master     # git 上传所在分支, 默认 master
+      uri: http://config-3344.com:3344           # 本微服务启动后先去找 config server 3344 号服务, 通过 SpringCloudConfig 获取 githup 的服务地址
+#      username: SamsaraCloud
+#      password: yyzl2840032159
+#  profiles:
+#    active: dev
+#server:
+#  port: 11
+
+
