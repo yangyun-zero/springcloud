@@ -88,33 +88,18 @@
     </dependencyManagement>
 
     <build>
-        <finalName>microservicecloud</finalName>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <configuration>
                     <delimiters>
-                        <!--
-                            解析 yml 中配置的 info 信息, 用于描述 Eureka 注册中心服务信息: microervicecloud-dept8001(http://192.168.5.86:8001/info)
-                            info:
-                                  app.name: yangyun-microservicecloud
-                                  company.name: www.yangyun.com
-                                  build.artifactId: $project.artifactId$
-                                  build.version: $project.version$
-                         -->
                         <delimit>$</delimit>
                     </delimiters>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
-
-
 </project>
