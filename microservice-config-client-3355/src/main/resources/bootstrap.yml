@@ -7,7 +7,6 @@ spring:
       label: master     # git 上传所在分支, 默认 master
       uri: http://config-3344.com:3344           # 本微服务启动后先去找 config server 3344 号服务, 通过 SpringCloudConfig 获取 githup 的服务地址
 #      username: SamsaraCloud
-#      password: yyzl2840032159
 #  profiles:
 #    active: dev
 #server:
