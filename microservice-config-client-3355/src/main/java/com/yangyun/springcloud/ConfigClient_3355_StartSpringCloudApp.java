@@ -14,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ConfigClient_3355_StartSpringCloudApp {
 
     public static void main(String[] args) {
+        System.out.println("");
         SpringApplication.run(ConfigClient_3355_StartSpringCloudApp.class, args);
     }
 }
