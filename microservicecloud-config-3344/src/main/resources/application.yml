@@ -8,6 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/SamsaraCloud/microservicecloud-config.git  # githup 上 git 仓库
-          username: SamsaraCloud
-          password: yyzl2840032159
+          uri: https://github.com/yangyun-zero/microservicecloud-config.git  # githup 上 git 仓库
+          username: yangyun-zero
+          password: Yyzl2840032159!
