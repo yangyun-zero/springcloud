@@ -28,7 +28,7 @@ public class DeptServiceImpl implements DeptService {
 
     @Override
     public Dept get(Long id) {
-        return deptMapper.findById(id);
+        return null;
     }
 
     @Override

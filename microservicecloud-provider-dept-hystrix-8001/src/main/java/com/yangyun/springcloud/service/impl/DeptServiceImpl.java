@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @ClassName DeptServiceImpl
@@ -28,7 +30,13 @@ public class DeptServiceImpl implements DeptService {
 
     @Override
     public Dept get(Long id) {
-        return deptMapper.findById(id);
+//        return deptMapper.findById(id);
+        try {
+            TimeUnit.MILLISECONDS.sleep(900);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return new Dept(new Random().nextLong(), "yy", "dslj");
     }
 
     @Override

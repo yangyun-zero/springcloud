@@ -33,8 +33,11 @@ public class DeptController {
     public Dept get(@PathVariable("id") Long id)
     {
         Dept dept = service.get(id);
+
         if (dept == null){
             throw new RuntimeException("查询" + id + ": 没有数据");
+        } else {
+            System.out.println(dept.toString());
         }
 
         return dept;
